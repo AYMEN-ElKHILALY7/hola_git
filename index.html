@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablero de Ajedrez</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Simulador de Movimiento de Piezas</h1>
+    </header>
+
+    <!-- Tablero -->
+    <section id="tablero" class="tablero"></section>
+
+    <!-- Selector de Ficha -->
+    <section class="seleccion">
+        <h2>Seleccionar Ficha</h2>
+        <form id="form-ficha">
+            <label for="tipoFicha">Tipo de Ficha:</label>
+            <select id="tipoFicha">
+                <option value="Rey">Rey</option>
+                <option value="Dama">Dama</option>
+                <option value="Torre">Torre</option>
+                <option value="Alfil">Alfil</option>
+                <option value="Caballo">Caballo</option>
+                <option value="Peon">Peón</option>
+            </select>
+            <label for="posicion">Posición Inicial (ej. A2):</label>
+            <input type="text" id="posicion" placeholder="Ej: A2" required>
+            <button type="submit">Mostrar Movimientos</button>
+        </form>
+    </section>
+
+    <!-- Resultado -->
+    <section id="resultado" class="resultado">
+        <h2>Movimientos Posibles</h2>
+        <p id="movimientos"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
